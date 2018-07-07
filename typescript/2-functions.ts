@@ -48,3 +48,17 @@ type Option<T> = T | undefined | null;
 const aFunction = (x?: Option<number>): string => {
   return JSON.stringify(x);
 };
+
+
+// signature overloads
+function reverse(string: string): string;
+function reverse<T>(array: T[]): T[];
+
+function reverse(stringOrArray: string | any[]) {
+  if (typeof stringOrArray === 'string') {
+    return [...stringOrArray].reverse().join('');
+  }
+  return stringOrArray.slice().reverse();
+}
+
+// but it doesn't work for arrow functions

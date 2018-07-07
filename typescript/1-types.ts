@@ -85,8 +85,15 @@ console.log(SomeEnum2.A);
 // A
 
 
-// partial types
+// mapped types
 type K1 = keyof ISomething1; // type of key A | type of key B
+
+const getProp = <T, K extends keyof T>(obj: T, key: K): T[K] => {
+  return obj[key];
+}
+console.log(getProp(something, 'a'));
+// == Output ==
+// 1
 
 type Partial<T> = {
     [P in keyof T]?: T[P];
