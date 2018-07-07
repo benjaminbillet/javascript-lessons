@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "execute": "ts-node",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "transpile": "tsc --outDir ./generated -p tsconfig.json"
+  },
+  "devDependencies": {
+    "ts-node": "6.0.5",
+    "typescript": "2.8.3"
+  }
+}

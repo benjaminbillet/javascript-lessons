@@ -2,17 +2,24 @@
 
 A collection of examples for the Javascript language, from basic things like comparison to advanced ES7 features like decorators.
 
-## How to run one example file
-In the `basics` folder:
+## First step
+In the `basics` folder, run the following command for retrieving dependencies:
 
 ```
 yarn
+```
+
+## How to run one example file
+```
 yarn execute <name of the script (e.g., 1-arithmetic.js)>
 ```
 
-or with npm:
-
+## How to transpile all files to "common" Javascript
 ```
-npm install
-npm run execute <name of the script (e.g., 1-arithmetic.js)>
+yarn transpile
+```
+
+All transpiled files goes to a folder called `generated`. Run a diff between two files to understand what kind of transformations the `babel` transpiler did:
+```
+diff <name of the script (e.g., 1-arithmetic.js)> generated/<name of the script (e.g., 1-arithmetic.js)>
 ```
