@@ -1,0 +1,10 @@
+.borderblock {
+  padding: 10px;
+  text-align: center;
+  border: 5px solid #fd971f;
+  margin: 10px;
+}
+
+.grayblock {
+  background-color: #ccc;
+}
