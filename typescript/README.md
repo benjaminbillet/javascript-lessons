@@ -16,7 +16,7 @@ yarn execute <name of the script (e.g., 1-arithmetic.js)>
 
 ## How to check types for all example files
 ```
-yarn typecheck <name of the script (e.g., 1-arithmetic.js)>
+yarn typecheck
 ```
 
 ## How to transpile all files to "common" Javascript
