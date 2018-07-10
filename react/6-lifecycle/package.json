@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "transpile": "webpack --config webpack.config.js App.tsx -o generated/bundle.js"
+  },
+  "devDependencies": {
+    "@types/node": "10.5.2",
+    "@types/react": "16.4.6",
+    "@types/react-dom": "16.0.6",
+    "@types/webpack": "4.4.5",
+    "babel-cli": "6.26.0",
+    "babel-loader": "7.1.5",
+    "babel-preset-react": "6.24.1",
+    "ts-loader": "4.4.2",
+    "ts-node": "7.0.0",
+    "tslib": "1.9.3",
+    "typescript": "2.9.2",
+    "webpack": "4.15.1",
+    "webpack-cli": "3.0.8"
+  },
+  "dependencies": {
+    "react": "16.4.1",
+    "react-dom": "16.4.1"
+  }
+}
